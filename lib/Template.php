@@ -17,12 +17,12 @@ class Template
         $this->template = $template;
     }
 
-    public function __get($key);
+    public function __get($key)
     {
         return $this->vars[$key];
     }
 
-    public function __set($key, $value);
+    public function __set($key, $value)
     {
         $this->vars[$key] = $value;
     }
