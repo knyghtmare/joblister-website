@@ -8,7 +8,9 @@
                 <option value="0">Choose Category</option>
                 <?php foreach ($categories as $category): ?>
                     <option value="<?= $category->id ?>"
-                        <?php echo ($category->id == $cat) ? "selected" : "" ?>><?= $category->name ?></option>
+                        <?php echo ($category->id == $cat) ? "selected" : "" ?>
+                        <?= $category->name ?>
+                </option>
                 <?php endforeach; ?>
             </select>
             <br>
