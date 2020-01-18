@@ -1,4 +1,4 @@
-<?php include "inc/header.php"; ?>
+<?php include "includes/header.php"; ?>
 
 <h2 class="page-header"><?php echo $job->job_title; ?> (<?php echo $job->location; ?>)</h2>
 <small>Posted By <?php echo $job->contact_user; ?> on <?php echo $job->post_date; ?></small>
@@ -30,4 +30,4 @@
 
 </div>
 </p>
-<?php include "inc/footer.php"; ?>
+<?php include "includes/footer.php"; ?>

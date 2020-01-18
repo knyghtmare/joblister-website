@@ -1,4 +1,4 @@
-<?php include "inc/header.php"; ?>
+<?php include "includes/header.php"; ?>
 
 <h2 class="page-header">Create Job Listing</h2>
 <form action="edit.php?id=<?= $job->id ?>" method="post">
@@ -51,4 +51,4 @@
     <button class="btn btn-primary" name="submit" type="submit">Submit</button>
 </form>
 
-<?php include "inc/footer.php"; ?>
+<?php include "includes/footer.php"; ?>
