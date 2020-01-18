@@ -1,0 +1,33 @@
+<?php include "inc/header.php"; ?>
+
+<h2 class="page-header"><?php echo $job->job_title; ?> (<?php echo $job->location; ?>)</h2>
+<small>Posted By <?php echo $job->contact_user; ?> on <?php echo $job->post_date; ?></small>
+<hr>
+<p class="lead">
+    <?php echo $job->description; ?>
+<ul class="list-group">
+    <li class="list-group-item">
+        <strong>Company: </strong><?php echo $job->company; ?>
+    </li>
+    <li class="list-group-item">
+        <strong>Salary: </strong><?php echo $job->salary; ?>
+    </li>
+    <li class="list-group-item">
+        <strong>Contact Email: </strong><?php echo $job->contact_email; ?>
+    </li>
+</ul>
+
+<br><br>
+<a href="index.php">Go Back</a>
+<br><br>
+<div class="well">
+    <a href="edit.php?id=<?= $job->id ?>" class="btn btn-info">Edit</a>
+
+    <form style="display: inline;" action="job.php" method="post">
+        <input type="hidden" name="del_id" value="<?= $job->id ?>">
+        <button class="btn btn-danger" type="submit"> Delete</button>
+    </form>
+
+</div>
+</p>
+<?php include "inc/footer.php"; ?>
